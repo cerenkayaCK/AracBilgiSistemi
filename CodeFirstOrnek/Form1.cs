@@ -10,14 +10,12 @@ namespace CodeFirstOrnek
             InitializeComponent();
             db = new UygulamaContextDb();
             Listele();
-           
-
 
         }
 
         private void Listele() //veritabýnda bulunan arabalar listesini listele.
         {
-           
+
             lstArabalar.DataSource = db.Arabalar.ToList();
             lstArabalar.SelectedIndex = db.Arabalar.Count() - 1;
         }
@@ -46,7 +44,6 @@ namespace CodeFirstOrnek
                 {
                     db.Arabalar.Remove(silinecekAraba);
                     db.SaveChanges();
-
                     Listele();
                 }
             }
@@ -127,14 +124,9 @@ namespace CodeFirstOrnek
 
         }
 
-        private void txtArama_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-          
         }
     }
 }

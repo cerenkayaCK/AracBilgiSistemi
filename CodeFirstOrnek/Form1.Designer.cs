@@ -51,25 +51,25 @@
             // 
             // lstArabalar
             // 
-            lstArabalar.BackColor = SystemColors.ButtonFace;
+            lstArabalar.BackColor = SystemColors.MenuBar;
             lstArabalar.DisplayMember = "none";
             lstArabalar.ForeColor = Color.DarkGray;
             lstArabalar.FormattingEnabled = true;
             lstArabalar.ItemHeight = 15;
-            lstArabalar.Location = new Point(32, 43);
+            lstArabalar.Location = new Point(13, 8);
             lstArabalar.Margin = new Padding(4, 2, 4, 2);
             lstArabalar.Name = "lstArabalar";
-            lstArabalar.Size = new Size(362, 259);
+            lstArabalar.Size = new Size(381, 274);
             lstArabalar.TabIndex = 0;
             // 
             // btnEkle
             // 
             btnEkle.BackColor = Color.DarkGray;
             btnEkle.ForeColor = Color.White;
-            btnEkle.Location = new Point(430, 33);
+            btnEkle.Location = new Point(590, 8);
             btnEkle.Margin = new Padding(4, 2, 4, 2);
             btnEkle.Name = "btnEkle";
-            btnEkle.Size = new Size(62, 78);
+            btnEkle.Size = new Size(147, 87);
             btnEkle.TabIndex = 1;
             btnEkle.Text = "Araba Ekle";
             btnEkle.UseVisualStyleBackColor = false;
@@ -79,10 +79,10 @@
             // 
             btnSil.BackColor = Color.DarkGray;
             btnSil.ForeColor = Color.White;
-            btnSil.Location = new Point(120, 332);
+            btnSil.Location = new Point(92, 288);
             btnSil.Margin = new Padding(4, 2, 4, 2);
             btnSil.Name = "btnSil";
-            btnSil.Size = new Size(99, 24);
+            btnSil.Size = new Size(110, 72);
             btnSil.TabIndex = 2;
             btnSil.Text = "SİL";
             btnSil.UseVisualStyleBackColor = false;
@@ -92,10 +92,10 @@
             // 
             btnGuncelle.BackColor = Color.DarkGray;
             btnGuncelle.ForeColor = Color.White;
-            btnGuncelle.Location = new Point(430, 125);
+            btnGuncelle.Location = new Point(402, 8);
             btnGuncelle.Margin = new Padding(4, 2, 4, 2);
             btnGuncelle.Name = "btnGuncelle";
-            btnGuncelle.Size = new Size(62, 66);
+            btnGuncelle.Size = new Size(190, 87);
             btnGuncelle.TabIndex = 3;
             btnGuncelle.Text = "Araba Güncelle";
             btnGuncelle.UseVisualStyleBackColor = false;
@@ -104,7 +104,7 @@
             // txtArabaId
             // 
             txtArabaId.BackColor = SystemColors.Menu;
-            txtArabaId.Location = new Point(32, 332);
+            txtArabaId.Location = new Point(13, 321);
             txtArabaId.Margin = new Padding(4, 2, 4, 2);
             txtArabaId.Name = "txtArabaId";
             txtArabaId.Size = new Size(71, 23);
@@ -115,7 +115,7 @@
             lbla.AutoSize = true;
             lbla.Font = new Font("Segoe UI Semilight", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbla.ForeColor = SystemColors.InfoText;
-            lbla.Location = new Point(32, 319);
+            lbla.Location = new Point(17, 307);
             lbla.Margin = new Padding(4, 0, 4, 0);
             lbla.Name = "lbla";
             lbla.Size = new Size(49, 11);
@@ -125,7 +125,7 @@
             // rdMarka
             // 
             rdMarka.AutoSize = true;
-            rdMarka.Location = new Point(14, 49);
+            rdMarka.Location = new Point(130, 68);
             rdMarka.Margin = new Padding(4, 2, 4, 2);
             rdMarka.Name = "rdMarka";
             rdMarka.Size = new Size(57, 19);
@@ -137,7 +137,7 @@
             // rdModel
             // 
             rdModel.AutoSize = true;
-            rdModel.Location = new Point(14, 82);
+            rdModel.Location = new Point(25, 68);
             rdModel.Margin = new Padding(4, 2, 4, 2);
             rdModel.Name = "rdModel";
             rdModel.Size = new Size(58, 19);
@@ -149,7 +149,7 @@
             // rdMesafe
             // 
             rdMesafe.AutoSize = true;
-            rdMesafe.Location = new Point(14, 115);
+            rdMesafe.Location = new Point(25, 116);
             rdMesafe.Margin = new Padding(4, 2, 4, 2);
             rdMesafe.Name = "rdMesafe";
             rdMesafe.Size = new Size(62, 19);
@@ -161,7 +161,7 @@
             // rdRenk
             // 
             rdRenk.AutoSize = true;
-            rdRenk.Location = new Point(14, 146);
+            rdRenk.Location = new Point(130, 116);
             rdRenk.Margin = new Padding(4, 2, 4, 2);
             rdRenk.Name = "rdRenk";
             rdRenk.Size = new Size(51, 19);
@@ -179,11 +179,11 @@
             groupBox1.Controls.Add(rdMesafe);
             groupBox1.Controls.Add(rdModel);
             groupBox1.ForeColor = SystemColors.MenuText;
-            groupBox1.Location = new Point(515, 43);
+            groupBox1.Location = new Point(509, 99);
             groupBox1.Margin = new Padding(4, 2, 4, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4, 2, 4, 2);
-            groupBox1.Size = new Size(155, 311);
+            groupBox1.Size = new Size(228, 261);
             groupBox1.TabIndex = 10;
             groupBox1.TabStop = false;
             groupBox1.Text = "Arama";
@@ -192,10 +192,10 @@
             // 
             btnAramaYap.BackColor = Color.DarkGray;
             btnAramaYap.ForeColor = Color.White;
-            btnAramaYap.Location = new Point(14, 249);
+            btnAramaYap.Location = new Point(8, 212);
             btnAramaYap.Margin = new Padding(4, 2, 4, 2);
             btnAramaYap.Name = "btnAramaYap";
-            btnAramaYap.Size = new Size(121, 38);
+            btnAramaYap.Size = new Size(210, 37);
             btnAramaYap.TabIndex = 11;
             btnAramaYap.Text = "Ara";
             btnAramaYap.UseVisualStyleBackColor = false;
@@ -205,22 +205,21 @@
             // 
             txtArama.BackColor = SystemColors.Menu;
             txtArama.Font = new Font("Segoe UI Semilight", 9F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            txtArama.Location = new Point(14, 207);
+            txtArama.Location = new Point(8, 176);
             txtArama.Margin = new Padding(4, 2, 4, 2);
             txtArama.Multiline = true;
             txtArama.Name = "txtArama";
-            txtArama.Size = new Size(121, 32);
+            txtArama.Size = new Size(210, 32);
             txtArama.TabIndex = 10;
-            txtArama.TextChanged += txtArama_TextChanged;
             // 
             // button1
             // 
             button1.BackColor = Color.DarkGray;
             button1.ForeColor = SystemColors.Window;
-            button1.Location = new Point(227, 332);
+            button1.Location = new Point(199, 288);
             button1.Margin = new Padding(4, 2, 4, 2);
             button1.Name = "button1";
-            button1.Size = new Size(167, 24);
+            button1.Size = new Size(204, 72);
             button1.TabIndex = 11;
             button1.Text = "ARABALARI GÖSTER";
             button1.UseVisualStyleBackColor = false;
@@ -230,10 +229,10 @@
             // 
             button2.BackColor = Color.DarkGray;
             button2.ForeColor = Color.White;
-            button2.Location = new Point(430, 210);
+            button2.Location = new Point(402, 95);
             button2.Margin = new Padding(4, 2, 4, 2);
             button2.Name = "button2";
-            button2.Size = new Size(62, 50);
+            button2.Size = new Size(99, 133);
             button2.TabIndex = 12;
             button2.Text = "Yeni Plaka Ekle";
             button2.UseVisualStyleBackColor = false;
@@ -243,10 +242,10 @@
             // 
             btnPlakaGuncelle.BackColor = Color.DarkGray;
             btnPlakaGuncelle.ForeColor = Color.White;
-            btnPlakaGuncelle.Location = new Point(430, 281);
+            btnPlakaGuncelle.Location = new Point(402, 228);
             btnPlakaGuncelle.Margin = new Padding(4, 2, 4, 2);
             btnPlakaGuncelle.Name = "btnPlakaGuncelle";
-            btnPlakaGuncelle.Size = new Size(62, 75);
+            btnPlakaGuncelle.Size = new Size(99, 132);
             btnPlakaGuncelle.TabIndex = 13;
             btnPlakaGuncelle.Text = "Plaka Guncelle";
             btnPlakaGuncelle.UseVisualStyleBackColor = false;
@@ -254,22 +253,22 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semilight", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.InfoText;
-            label1.Location = new Point(7, 0);
+            label1.Location = new Point(270, 9);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(96, 11);
+            label1.Size = new Size(108, 102);
             label1.TabIndex = 16;
             label1.Text = "ARABA BİLGİ SİSTEMİ";
+            label1.Click += label1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SeaShell;
-            ClientSize = new Size(699, 406);
+            BackColor = SystemColors.MenuBar;
+            ClientSize = new Size(756, 364);
             Controls.Add(label1);
             Controls.Add(btnPlakaGuncelle);
             Controls.Add(button2);
@@ -286,7 +285,6 @@
             Margin = new Padding(4, 2, 4, 2);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
