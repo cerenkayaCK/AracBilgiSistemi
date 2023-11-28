@@ -21,6 +21,21 @@ namespace CodeFirstOrnek.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ArabaMuhendis", b =>
+                {
+                    b.Property<int>("ArabalarId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MuhendisListesiId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ArabalarId", "MuhendisListesiId");
+
+                    b.HasIndex("MuhendisListesiId");
+
+                    b.ToTable("ArabaMuhendis", (string)null);
+                });
+
             modelBuilder.Entity("CodeFirstOrnek.Araba", b =>
                 {
                     b.Property<int>("Id")
@@ -60,6 +75,23 @@ namespace CodeFirstOrnek.Migrations
                     b.ToTable("Arabalar");
                 });
 
+            modelBuilder.Entity("CodeFirstOrnek.Muhendis", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AdSoyad")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Muhendisler");
+                });
+
             modelBuilder.Entity("CodeFirstOrnek.Plaka", b =>
                 {
                     b.Property<int>("Id")
@@ -92,6 +124,21 @@ namespace CodeFirstOrnek.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Sahipler");
+                });
+
+            modelBuilder.Entity("ArabaMuhendis", b =>
+                {
+                    b.HasOne("CodeFirstOrnek.Araba", null)
+                        .WithMany()
+                        .HasForeignKey("ArabalarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CodeFirstOrnek.Muhendis", null)
+                        .WithMany()
+                        .HasForeignKey("MuhendisListesiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("CodeFirstOrnek.Araba", b =>

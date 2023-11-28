@@ -5,7 +5,7 @@
 namespace CodeFirstOrnek.Migrations
 {
     /// <inheritdoc />
-    public partial class BesinciGoc : Migration
+    public partial class IkinciGoc : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

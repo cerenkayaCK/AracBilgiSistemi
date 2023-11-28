@@ -25,10 +25,11 @@ namespace CodeFirstOrnek
 
         public Sahip Sahip { get; set; }
 
+        public virtual List<Muhendis> MuhendisListesi { get; set; }
 
-        public override string ToString()
-        {
-            return Id + "-" + Marka + " " + Model+"   "+KatEttigiMesafe+"  "+Renk+"  "+"plakaId: "+PlakaId+" Araç Sahibi: "+ SahipId;
-        }
+
+
+
+
     }
 }

@@ -44,7 +44,12 @@
             label6 = new Label();
             cmbPlakalar = new ComboBox();
             label5 = new Label();
+            cmbMuhendisler = new ComboBox();
+            groupBox1 = new GroupBox();
+            lstMuhendisler = new ListBox();
+            button2 = new Button();
             grpEkle.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // txtModel
@@ -113,11 +118,11 @@
             // 
             // btnTamam
             // 
-            btnTamam.Location = new Point(46, 267);
+            btnTamam.Location = new Point(167, 256);
             btnTamam.Name = "btnTamam";
-            btnTamam.Size = new Size(218, 37);
+            btnTamam.Size = new Size(250, 26);
             btnTamam.TabIndex = 8;
-            btnTamam.Text = "EKLE";
+            btnTamam.Text = "KAYDET";
             btnTamam.UseVisualStyleBackColor = true;
             btnTamam.Click += btnTamam_Click;
             // 
@@ -137,11 +142,12 @@
             grpEkle.Controls.Add(txtMesafe);
             grpEkle.Controls.Add(txtMarka);
             grpEkle.Controls.Add(txtModel);
-            grpEkle.Location = new Point(21, 23);
+            grpEkle.Location = new Point(21, 12);
             grpEkle.Name = "grpEkle";
             grpEkle.Size = new Size(271, 238);
             grpEkle.TabIndex = 10;
             grpEkle.TabStop = false;
+            grpEkle.Text = "Araba Özellikleri";
             // 
             // button1
             // 
@@ -195,18 +201,58 @@
             label5.TabIndex = 8;
             label5.Text = "Plaka";
             // 
-            // Form2
+            // cmbMuhendisler
+            // 
+            cmbMuhendisler.FormattingEnabled = true;
+            cmbMuhendisler.Location = new Point(17, 29);
+            cmbMuhendisler.Name = "cmbMuhendisler";
+            cmbMuhendisler.Size = new Size(121, 23);
+            cmbMuhendisler.TabIndex = 11;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(button2);
+            groupBox1.Controls.Add(lstMuhendisler);
+            groupBox1.Controls.Add(cmbMuhendisler);
+            groupBox1.Location = new Point(298, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(245, 238);
+            groupBox1.TabIndex = 12;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Muhendisler";
+            // 
+            // lstMuhendisler
+            // 
+            lstMuhendisler.FormattingEnabled = true;
+            lstMuhendisler.ItemHeight = 15;
+            lstMuhendisler.Location = new Point(17, 72);
+            lstMuhendisler.Name = "lstMuhendisler";
+            lstMuhendisler.Size = new Size(202, 124);
+            lstMuhendisler.TabIndex = 12;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(156, 27);
+            button2.Name = "button2";
+            button2.Size = new Size(63, 25);
+            button2.TabIndex = 13;
+            button2.Text = "EKLE";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // ArabaEkle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(321, 322);
+            ClientSize = new Size(577, 304);
             Controls.Add(grpEkle);
             Controls.Add(btnTamam);
-            Name = "Form2";
+            Controls.Add(groupBox1);
+            Name = "ArabaEkle";
             Text = "Form2";
             Load += Form2_Load;
             grpEkle.ResumeLayout(false);
             grpEkle.PerformLayout();
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -228,5 +274,9 @@
         private Label label8;
         private TextBox txtSahipId;
         private Label label6;
+        private ComboBox cmbMuhendisler;
+        private GroupBox groupBox1;
+        private Button button2;
+        private ListBox lstMuhendisler;
     }
 }
